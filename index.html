@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript AddEventListener() Hands-On</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            background-color: #FFFFFF; /* White background color */
+            font-family: 'Arial', sans-serif;
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 20px;
+            color: #000000 /* Black text color */
+        }
+
+        button {
+            padding: 10px 50px;
+            margin: 15px;
+            cursor: pointer;
+            border: 4px ridge;
+            font-size: 16px;
+        }
+
+        #button1 {
+            background-color: #ffffff;
+            color: #000000; /* Black text color */
+        }
+
+        #button2 {
+            background-color: #ffffff;
+            color: #000000; /* Black text color */
+        }
+
+        #button3 {
+            background-color: #ffffff;
+            color: #000000; /* Black text color */
+        }
+    </style>
+</head>
+<body>
+    <h1>JavaScript AddEventListener() Hands-On</h1>
+    <button id="button1">Button 1</button>
+    <button id="button2">Button 2</button>
+    <button id="button3">Button 3</button>
+
+    <script>
+        // Function 1
+        function function1() {
+            alert("Button 1 was clicked!");
+        }
+
+        // Function 2
+        function function2() {
+            alert("Button 2 was clicked!");
+        }
+
+        // Function 3
+        function function3() {
+            alert("Button 3 was clicked!");
+        }
+
+        // Attach event listeners
+        document.getElementById("button1").addEventListener("click", function1);
+        document.getElementById("button2").addEventListener("click", function2);
+        document.getElementById("button3").addEventListener("click", function3);
+    </script>
+</body>
+</html>
